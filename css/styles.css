@@ -437,3 +437,29 @@ footer {
     height: 100%;
     border: 0;
 }
+
+/* ------------------------------------------- */
+/* Estilo del Botón "Agregar al Carrito" */
+/* ------------------------------------------- */
+
+.add-to-cart-btn {
+    /* Color de fondo consistente con el diseño (botón de Contacto) */
+    background-color: #00bcd4; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 15px; /* Separación del precio */
+    width: 90%; /* Ancho que se ajuste a la tarjeta */
+    transition: background-color 0.3s, transform 0.1s;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #0097a7;
+    transform: translateY(-1px);
+}
