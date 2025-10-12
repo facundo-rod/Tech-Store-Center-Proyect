@@ -463,3 +463,90 @@ footer {
     background-color: #0097a7;
     transform: translateY(-1px);
 }
+
+/* --------------------------------- */
+/* 8. ESTILOS DEL BANNER */
+/* --------------------------------- */
+
+#hero-banner {
+    width: 100%;
+    height: 450px; /* Altura del banner */
+    background-image: url('../asset/img/Banner/freepik__banner.png');
+    background-size: cover; /* La imagen cubre todo el área del banner */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat;
+    display: flex; /* Para centrar el contenido vertical y horizontalmente */
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    text-align: center;
+    color: #fff; /* Color de texto blanco para contraste */
+    position: relative; /* Necesario para el overlay si lo quieres */
+    margin-bottom: 40px; /* Separación de la siguiente sección */
+}
+
+/* Opcional: Overlay oscuro para mejorar la legibilidad del texto */
+#hero-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay semitransparente oscuro */
+    z-index: 1;
+}
+
+.banner-content {
+    position: relative; /* Asegura que el contenido esté sobre el overlay */
+    z-index: 2;
+    max-width: 800px; /* Limita el ancho del texto para mejor lectura */
+    padding: 20px;
+}
+
+#hero-banner h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.2rem; /* Tamaño de título grande */
+    margin-bottom: 15px;
+    color: #fff; /* Forzar color blanco para h2 */
+}
+
+#hero-banner p {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+
+/* Estilo del botón dentro del banner */
+.btn-banner {
+    display: inline-block;
+    background-color: #00bcd4; /* Color de acento principal */
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.btn-banner:hover {
+    background-color: #0097a7;
+}
+
+/* Media Query para el banner en móviles */
+@media (max-width: 650px) {
+    #hero-banner {
+        height: 300px; /* Altura más pequeña en móviles */
+    }
+    #hero-banner h2 {
+        font-size: 2.2rem;
+    }
+    #hero-banner p {
+        font-size: 1rem;
+    }
+    .btn-banner {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
