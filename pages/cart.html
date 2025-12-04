@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras | Tech Store</title>
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body id="cart-page">
+
+    <header>
+        <div class="header-content">
+            <h1>Tech Store Center</h1>
+        
+            <nav>
+                <ul class="main-menu">
+                    <li>
+                        <a href="/index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Productos</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Pc y Notebooks</a></li>
+                            <li><a href="#">Componentes</a></li>
+                            <li><a href="#">Periféricos</a></li>
+                            <li><a href="#">Audio y Video</a></li>
+                            <li><a href="#">Accesorios</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="cart.html" class="cart-link">🛒 Carrito (<span class="cart-count">0</span>)</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Tu Carrito de Compras</h2>
+            
+            <div id="carrito-vacio-msg">
+                <p>Tu carrito está vacío. ¡Explora nuestras <a href="../index.html">promociones</a>!</p>
+            </div>
+            
+            <div id="carrito-lleno-container">
+                
+                <table id="tabla-productos-carrito">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio Unitario</th>
+                            <th>Cantidad</th>
+                            <th>Subtotal</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productos-carrito-tbody">
+                        </tbody>
+                </table>
+
+                <div id="resumen-carrito">
+                    <h3>Total a pagar: <span id="total-carrito">$0.00</span></h3>
+                    
+                    <button id="btn-finalizar-compra">
+                        Finalizar Compra
+                    </button>
+                    
+                    <button id="btn-vaciar-carrito">
+                        Vaciar Carrito
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p> FR dev - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <script type="module" src="../js/index.js"></script> 
+</body>
+</html>

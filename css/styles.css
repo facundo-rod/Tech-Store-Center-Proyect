@@ -361,7 +361,7 @@ footer {
 }
 
 /* ------------------------------------------- */
-/* 5. RESPONSIVIDAD (Media Queries) */
+/* 5. RESPONSIVIDAD                            */
 /* ------------------------------------------- */
 
 /* Tabletas (hasta 992px) */
@@ -443,7 +443,6 @@ footer {
 /* ------------------------------------------- */
 
 .add-to-cart-btn {
-    /* Color de fondo consistente con el diseño (botón de Contacto) */
     background-color: #00bcd4; 
     color: white;
     padding: 10px 15px;
@@ -470,21 +469,21 @@ footer {
 
 #hero-banner {
     width: 100%;
-    height: 450px; /* Altura del banner */
+    height: 450px; 
     background-image: url('../asset/img/Banner/freepik__banner.png');
-    background-size: cover; /* La imagen cubre todo el área del banner */
-    background-position: center; /* Centra la imagen de fondo */
+    background-size: cover; 
+    background-position: center; 
     background-repeat: no-repeat;
-    display: flex; /* Para centrar el contenido vertical y horizontalmente */
-    align-items: center; /* Centrado vertical */
-    justify-content: center; /* Centrado horizontal */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
     text-align: center;
-    color: #fff; /* Color de texto blanco para contraste */
-    position: relative; /* Necesario para el overlay si lo quieres */
-    margin-bottom: 40px; /* Separación de la siguiente sección */
+    color: #fff; 
+    position: relative; 
+    margin-bottom: 40px; 
 }
 
-/* Opcional: Overlay oscuro para mejorar la legibilidad del texto */
+/* Overlay oscuro para mejorar la legibilidad del texto */
 #hero-banner::before {
     content: '';
     position: absolute;
@@ -499,7 +498,7 @@ footer {
 .banner-content {
     position: relative; /* Asegura que el contenido esté sobre el overlay */
     z-index: 2;
-    max-width: 800px; /* Limita el ancho del texto para mejor lectura */
+    max-width: 800px; 
     padding: 20px;
 }
 
@@ -548,5 +547,139 @@ footer {
     .btn-banner {
         padding: 10px 20px;
         font-size: 1rem;
+    }
+}
+
+/* ------------------------------------------- */
+/* 9. ESTILOS DE LA PÁGINA DEL CARRITO (cart.html) */
+/* ------------------------------------------- */
+
+#carrito-vacio-msg {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+
+#carrito-vacio-msg a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#carrito-lleno-container {
+    /* Por defecto oculto, JS lo mostrará si hay productos */
+    display: none; 
+}
+
+#tabla-productos-carrito {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#tabla-productos-carrito thead tr {
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #ddd;
+}
+
+#tabla-productos-carrito th, 
+#tabla-productos-carrito td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#tabla-productos-carrito th:first-child, 
+#tabla-productos-carrito td:first-child {
+    text-align: left; /* Alinear nombres de producto a la izquierda */
+}
+
+/* Estilo para la imagen miniatura en la tabla */
+#tabla-productos-carrito img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Input para editar cantidad */
+.input-cantidad {
+    width: 60px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Botón eliminar (cruz roja o similar) */
+.btn-eliminar-item {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #f44336;
+    transition: transform 0.2s;
+}
+
+.btn-eliminar-item:hover {
+    transform: scale(1.2);
+}
+
+/* Sección de Resumen y Totales */
+#resumen-carrito {
+    text-align: right;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+}
+
+#resumen-carrito h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    color: #1a1a2e;
+    margin-bottom: 15px;
+}
+
+#btn-finalizar-compra,
+#btn-vaciar-carrito {
+    padding: 12px 25px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: opacity 0.3s;
+}
+
+#btn-finalizar-compra {
+    background-color: #00bcd4;
+    color: white;
+}
+
+#btn-vaciar-carrito {
+    background-color: #f44336;
+    color: white;
+}
+
+#btn-finalizar-compra:hover,
+#btn-vaciar-carrito:hover {
+    opacity: 0.9;
+}
+
+/* Responsividad para la tabla del carrito */
+@media (max-width: 600px) {
+    #tabla-productos-carrito {
+        display: block;
+        overflow-x: auto; /* Scroll horizontal en móviles si la tabla es muy ancha */
+    }
+    
+    #resumen-carrito button {
+        display: block;
+        width: 100%;
+        margin: 10px 0 0 0;
     }
 }

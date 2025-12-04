@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "Placa de Video ASUS ROG Strix GeForce RTX 4090",
+        "price": 1250000,
+        "image": "../asset/img/Promociones/Imganen_1_Placa_de_Video_ASUS_ROG_Strix_GeForce_RTX_4090_24GB_GDDR6X_BTF_OC_Edition__df2c81c2-grn.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Mother ASUS ROG STRIX X870-A GAMING WIFI DDR5 AM5",
+        "price": 499000,
+        "image": "../asset/img/Promociones/Imganen_2_Mother_ASUS_ROG_STRIX_X870-A_GAMING_WIFI_DDR5_AM5_5ff73060-grn.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Monitor Gamer Acer Nitro 23.8 FHD 180Hz",
+        "price": 210000,
+        "image": "../asset/img/Promociones/Imganen_3_Monitor_Gamer_Acer_Nitro_23.8__KG241Y_FHD_VA_180Hz_1ms_AMD_FreeSync_Premium_d6148189-grn.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Notebook Lenovo IdeaPad Slim 3 15.6 Intel Core i3",
+        "price": 399000,
+        "image": "../asset/img/Promociones/Imganen_4_Notebook_Lenovo_IdeaPad_Slim_3_15.6__Intel_Core_i3_N305_8GB_SSD_256GB_Win11_Arctic_Grey_15IAN8_82XB008LUS_810e0266-grn.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Procesador AMD Ryzen 5 5600GT",
+        "price": 250000,
+        "image": "../asset/img/Promociones/Imganen_5_Procesador_AMD_Ryzen_5_5600GT_4.6GHz_Turbo___Wraith_Stealth_Cooler_edcf5ff4-grn.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Memoria ADATA DDR5 48GB (2x24GB)",
+        "price": 218000,
+        "image": "../asset/img/Promociones/Imganen_6_Memoria_ADATA_DDR5_48GB__2x24GB__9200MHz_XPG_Lancer_CUDIMM_RGB_CL42_Intel_XMP_3.0_2613129e-grn.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Disco Solido SSD M.2 ADATA 500GB",
+        "price": 95000,
+        "image": "../asset/img/Promociones/Imganen_7_Disco_Solido_SSD_M.2_ADATA_500GB_Legend_860_6000MB_s_NVMe_PCIe_Gen4_x4_b0773c35-grn.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Gabinete Antec C8 Black Vidrio Templado",
+        "price": 76300,
+        "image": "../asset/img/Promociones/Imganen_8_Gabinete_Antec_C8_Black_Vidrio_Templado_270___Dual_Chamber_f21c5c25-grn.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Cooler CPU XYZ Thermax 6 White ARGB",
+        "price": 55990,
+        "image": "../asset/img/Promociones/Imganen_9_Cooler_CPU_XYZ_Thermax_6_White_ARGB_0b0ee7ca-grn.jpg"
+    }
+]
