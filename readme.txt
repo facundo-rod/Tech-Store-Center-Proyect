@@ -43,3 +43,13 @@ Dispositivo	Ancho Máximo	Comportamiento
 Escritorio	( > 992px )	3 tarjetas de producto, 3 columnas de reseñas, Formulario de 2 columnas.
 Tableta	( < 992px )	2 tarjetas de producto por fila.
 Móvil	( < 650px )	Menú de navegación vertical, 1 tarjeta/reseña por fila, Formulario de 1 columna.
+
+Utilizacion de : JavaScript: Arquitectura modular, POO básica para la lógica de negocio.
+- LocalStorage: Persistencia del estado del carrito de compras.
+- Fetch API: Carga asíncrona del catálogo de productos desde un archivo JSON local.
+- Carga Dinámica de Productos: Los productos son cargados asíncronamente desde 'data/productos.json' utilizando Fetch API e inyectados en 'index.html'.
+- Carrito de Compras (Modularizado):
+   • Agregar Producto: Botón dinámico que añade ítems al carrito.
+   • Persistencia: El estado del carrito se guarda en 'localStorage'.
+   • Renderizado en cart.html: Muestra la tabla de productos, permite editar la cantidad (con validación de enteros > 0), eliminar ítems y calcular el total en tiempo real.
+   • Contador Global: El número de ítems en el carrito se actualiza en el header de ambas páginas.
